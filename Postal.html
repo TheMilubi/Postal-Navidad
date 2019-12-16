@@ -80,6 +80,29 @@
       animation: glow 1s ease-in-out infinite alternate;
     }
 
+    @media (orientation: portrait) {
+      .contenedor {
+        background-image: url("fondo_2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        height: 100vh;
+      }
+      .tarjeta {
+        position: absolute;
+        width: 70vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        padding: 2rem;
+        text-align: center;
+        transition: 1s;
+      }
+      p{
+        color: black
+      }
+    }
+
     @keyframes glow {
       from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
@@ -99,11 +122,13 @@
         background-position: 0 100vh;
       }
     }
+
     @keyframes ladeo {
-      from{
+      from {
         background-position-x: 0;
       }
-      to{
+
+      to {
         background-position-x: 20vw;
       }
     }
